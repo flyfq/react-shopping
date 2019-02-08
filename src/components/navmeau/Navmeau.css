@@ -1,0 +1,12 @@
+.index-class{
+    padding: 1.5rem 0.625rem;
+}
+.index-class .weui-flex__item{
+    text-align: center;
+}
+.index-class .index-class-img{}
+.index-class .index-class-text{
+    margin: 0;
+    line-height: 2.5rem;
+    color: #444;
+}

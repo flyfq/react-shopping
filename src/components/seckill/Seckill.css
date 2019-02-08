@@ -1,0 +1,62 @@
+.index-seckill{}
+.index-seckill .seckill-hd{
+    position: relative;
+    height: 30px;
+    padding: 0 0.625rem;
+    margin-bottom: 0.5rem;
+}
+span.seckill-hd-title.theme-color {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.index-seckill .seckill-hd strong{
+    line-height: 30px;
+    font-size: 0.8rem;
+}
+.index-seckill .seckill-hd #time {
+    position: absolute;
+    top: 0;
+    left: 42%;
+    line-height: 30px;
+}
+.seckill-hd #time span{
+    padding: 0 3px;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+.index-seckill .seckill-hd-r{
+    position: absolute;
+    right: 0.625rem;
+    top: 0;
+    line-height: 30px;
+    font-size: 0.8rem;
+}
+
+.index-seckill .seckill-bd{
+    width: 100%;
+    overflow: hidden;
+}
+
+.index-seckill .seckill-bd .seckill-wares{}
+.index-seckill .seckill-bd .seckill-wares .seckill-ware{
+    width: 83px;   /* 自己后来加上去的 */
+    text-align: center;
+    padding: 0.625rem;
+}
+
+.seckill-ware img{
+    width: 100%;
+}
+.seckill-ware p{
+    margin: 5px 0 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.seckill-ware p strong{
+    font-size: 1.25rem;
+}
+.seckill-ware del{
+    font-size: 0.8rem;
+    color: #999;
+}

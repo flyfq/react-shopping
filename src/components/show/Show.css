@@ -1,0 +1,9 @@
+.index-show{
+    width: 100%;
+}
+.index-show img{
+    width: 100%;
+}
+.index-show .col-sm-12, .index-show .col-sm-4, .index-show .col-sm-6, .index-show .col-xs-12, .index-show .col-xs-4, .index-show .col-xs-6{
+    padding: 0;
+}

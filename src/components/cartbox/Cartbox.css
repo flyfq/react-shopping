@@ -1,0 +1,20 @@
+
+.commodity_list { background: #fff; margin-bottom: 10px; }
+.shop_ul_bottom.account_info_box:nth-last-child(1) { border-bottom: none; }
+.commodity_list .tite_tim { width: 90%; margin: 0 auto; padding: 8px 0; color: #333; font-size: 1.2rem; background-size: 6px; }
+.commodity_list .tite_tim em { float: left; width: 20px; height: 20px; border: solid 1px #e6e6e6; border-radius: 50%; margin-right: 10px; }
+.commodity_list .commodity_list_term {margin-left: 20px; margin-bottom: 0;}
+.commodity_list .commodity_list_term li { position: relative; overflow: hidden; padding: 12px 0; }
+.commodity_list .commodity_list_term li em { position: absolute; width: 20px; height: 20px; border: solid 1px #e6e6e6; border-radius: 50%; left: 0; top: 40px; }
+.commodity_list .commodity_list_term li img { width: 80px; height: 80px; max-width: 80px; max-height: 80px; float: left; margin-left: 28px; border: 1px solid #dedede;padding: 2px;}
+.commodity_list .commodity_list_term li .div_center { width: 50%; float: left; position: relative; margin-top: 7px; margin-left: 2%; }
+.commodity_list .commodity_list_term li .div_center h4 { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; color: #333; margin: 0; font-size: 1.2rem; margin-bottom: 2px; }
+.commodity_list .commodity_list_term li .div_center span { color: #666; font-size: 1rem; }
+.commodity_list .commodity_list_term li .div_center p { margin: 0; font-size: 1.25rem; color: #f34347; margin-top: 6px; font-family: "-apple-system","Helvetica Neue",Roboto,"Segoe UI",sans-serif; }
+.commodity_list .commodity_list_term li .div_right { position: absolute; bottom: 10px; right: 4%; border: solid 1px #e6e6e6; border-radius: 4px; width: 82px; overflow: hidden; text-align: center; line-height: 30px; }
+.commodity_list .commodity_list_term li .div_right i { float: left; width: 33%; color: #333; font-style: normal;}
+.commodity_list .commodity_list_term li .div_right span { float: left; width: 33%; border-left: solid 1px #e6e6e6; border-right: solid 1px #e6e6e6; color: #333; }
+.shop_ul_bottom.account_info_box { margin-top: 0; border-top: solid 1px #e6e6e6; border-bottom: solid 1px #e6e6e6; }
+.shop_ul_bottom.account_info_box .xi_cu { height: 24px; line-height: 24px; font-size:12px; padding: 0 6px; border-radius: 4px; background: #f34347; color: #fff; margin-top: 11px; margin-right: 2%; }
+.commodity_list .commodity_list_term li .div_center p i { font-size: 0.6rem; font-style: normal; }
+.commodity_list .commodity_list_term li .div_center p b { font-weight: initial; }

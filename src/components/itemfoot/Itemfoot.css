@@ -1,0 +1,18 @@
+.zyw-footer .col-sm-2, .zyw-footer .col-sm-3, .zyw-footer .col-xs-2, .zyw-footer .col-xs-3{
+    padding: 0;
+    border-top: 1px solid #f6f6f6;
+}
+.zyw-footer .footer-btn{
+    line-height: 56px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.25rem;
+}
+.zyw-footer .footer-warning{
+    background: orange;
+}
+.zyw-footer .footer-danger{
+    background: red;
+}

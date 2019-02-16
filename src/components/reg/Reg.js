@@ -1,8 +1,19 @@
 import React,{Component} from 'react';
 import "./Reg.css";
 import Regheader from "../regheader/Regheader";
+import asynUser from "../../store/actions/asynUser";
+import {connect} from "react-redux";
 
 class Reg extends Component{
+    state={
+        username:"",
+        password:""
+    }
+    changeIpt(ev){
+        this.setState({
+            [ev.target.name]:ev.target.value
+        })
+    }
     render() {
         return(
             <div>
@@ -11,7 +22,7 @@ class Reg extends Component{
                     <div className="weui-cell mt-2">
                         <div className="weui-cell__hd"><label className="weui-label">手机号</label></div>
                         <div className="weui-cell__bd">
-                            <input className="weui-input" type="number" pattern="[0-9]*" placeholder="请输入手机号"/>
+                            <input name="username" value={this.state.username}  className="weui-input" type="number" pattern="[0-9]*" placeholder="请输入手机号" onChange={this.changeIpt.bind(this)}/>
                         </div>
                     </div>
                     <div className="weui-cell weui-cell_vcode">
@@ -28,7 +39,7 @@ class Reg extends Component{
                     <div className="weui-cell">
                         <div className="weui-cell__hd"><label className="weui-label">密码</label></div>
                         <div className="weui-cell__bd">
-                            <input className="weui-input" type="password" placeholder="输入密码"/>
+                            <input name="password" value={this.state.password} className="weui-input" type="password" placeholder="输入密码" onChange={(ev)=>this.changeIpt(ev)}/>
                         </div>
                     </div>
                     <div className="weui-cell">
@@ -43,12 +54,31 @@ class Reg extends Component{
 	        阅读并同意<a href="javascript:void(0);">《相关条款》</a>
 	      </span>
                     </label>
-                    <div className="login-btn"><a href="javascript:;"
-                                                  className="weui-btn weui-btn_warn theme-bgcolor">注册</a></div>
+                    <div className="login-btn" onClick={this.props.reg.bind(null,this.state.username,this.state.password,this.props.history)}><a href="javascript:;" className="weui-btn weui-btn_warn theme-bgcolor">注册</a></div>
                 </section>
             </div>
         )
     }
 }
 
-export default Reg
+const initMapStateToProps=state=>{
+    return(
+        {
+
+        }
+    )
+}
+const initMapDispatchToProps = dispatch=>({
+    reg:(username,password,history)=>dispatch(asynUser({
+        url:"http://localhost:3001/reactreg",
+        username,password
+    })).then(
+        (auth)=>auth ?
+            history.push({pathname:'/user'}) :
+            history.push({pathname:'/login'})
+    )
+})
+export default connect(
+    initMapStateToProps,
+    initMapDispatchToProps
+)(Reg)

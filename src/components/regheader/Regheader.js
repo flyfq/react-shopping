@@ -5,7 +5,7 @@ class Regheader extends Component{
     render() {
         return(
             <header className="zyw-header">
-                <div className="zyw-container white-color">
+                <div className="white-color">
                     <div className="head-l"><a href="javascript:window.history.back(-1)" target="_self"><img
                         src={headReturn} alt=""/></a></div>
                     <h1>注册</h1>

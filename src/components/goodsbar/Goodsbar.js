@@ -12,8 +12,8 @@ class Goodsbar extends Component{
                             <div className="bd-box-info">
                                 <div className="row">
                                     {
-                                        this.props.msg3.map(item=>(
-                                            <div className="col-xs-4 info-item">
+                                        this.props.msg3.map((item,index)=>(
+                                            <div className="col-xs-4 info-item" key={index}>
                                                 <img
                                                 src={item.images.medium}
                                                 alt=""/>

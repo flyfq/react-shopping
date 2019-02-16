@@ -4,12 +4,13 @@ import Search from "../../components/search/Search";
 import Leftsidebar from "../../components/leftsidebar/Leftsidebar";
 import Goodsbar from "../../components/goodsbar/Goodsbar";
 import fetchJsonp from "fetch-jsonp";
-
+let sTop = 0;
 class Productlist extends Component{
     state={
         msg3:[]
     };
     componentDidMount() {
+        window.scrollTo(0,sTop)
         // fetch(
         //     `https://api.douban.com/v2/movie/top250?start=0&count=10`
         // ).then(
@@ -28,6 +29,9 @@ class Productlist extends Component{
         ).then(
             data => this.setState({msg3: data.subjects})
         )
+    }
+    componentWillUnmount() {
+        sTop=document.documentElement.scrollTop
     }
 
     render() {
